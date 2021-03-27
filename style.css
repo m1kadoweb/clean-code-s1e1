@@ -18,8 +18,11 @@
 }
 
 @media (max-width:768px) {
-  .more-info-block { text-align: center;
+
+  .more-info-block { 
+    text-align: center;
   }
+
 }
 .tasks {
   display: block;
