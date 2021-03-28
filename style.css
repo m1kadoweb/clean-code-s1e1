@@ -5,24 +5,24 @@
   font-family: Lato, sans-serif;
 }
 
-.more-info-block {
+.more-info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.more-info-block .more-info-img {
+.more-info .more-info__img {
   width: 100%;
 }
 
-.more-info-block .more-info-link {
+.more-info .more-info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .more-info-block { 
+  .more-info { 
     text-align: center;
   }
 
@@ -34,13 +34,13 @@
   margin: 0 auto 0;
 }
 
-.task {
+.unordered-list__item-name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-item__wrapper {
   display: flex;
 }
 
@@ -49,7 +49,7 @@
   padding: 0px;
 }
 
-.list-item,
+.unordered-list__item,
 .title {
   list-style: none;
 }
@@ -111,12 +111,12 @@
   width: 318px;
 }
 
-.paragraph > .button:hover {
+.add-item > .button:hover {
   color: #0fc57c;
 }
 
 /* Task list */
-.list-item {
+.unordered-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -125,36 +125,36 @@
   align-items: center;
 }
 
-.list-item > * {
+.unordered-list__item > * {
   vertical-align: middle;
 }
 
-.list-item > .input[type="checkbox"] {
+.unordered-list__item > .input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.unordered-list__item > .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .input[type="text"] {
+.unordered-list__item > .input[type="text"] {
   width: 226px;
 }
 
-.list-item > .button.delete:hover {
+.unordered-list__item > .button.unordered-list__delete:hover {
   color: #cf2323;
 }
 
-.button.delete .delete-img {
+.button.unordered-list__delete .unordered-list__img-delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete .delete-img:hover {
+.button.unordered-list__delete .unordered-list__img-delete:hover {
   transform: rotateZ(0);
 }
 
@@ -165,15 +165,15 @@
 }
 
 /* Edit Task */
-.unordered-list .list-item .input[type=text] {
+.unordered-list .unordered-list__item .input[type=text] {
   display: none;
 }
 
-.unordered-list .list-item.edit-mode .input[type=text] {
+.unordered-list .unordered-list__item.unordered-list__item_edit-mode .input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.unordered-list .list-item.edit-mode .label {
+.unordered-list .unordered-list__item.unordered-list__item_edit-mode .label {
   display: none;
 }
