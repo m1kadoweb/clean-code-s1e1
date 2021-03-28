@@ -50,6 +50,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.className="unordered-list__delete";
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.classList.add("unordered-list__img-delete");
+    deleteButtonImg.setAttribute("alt", "");
     deleteButton.appendChild(deleteButtonImg);
     deleteButton.classList.add("button");
     
